@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <link rel="stylesheet" href="../css/FORMULARIO.css">
+    
+<!--Iconos-->
+<link rel="icon" type="image/x-icon" href="https://w7.pngwing.com/pngs/995/7/png-transparent-pink-lotus-flower-nelumbo-nucifera-flower-egyptian-lotus-lakshmi-color-sacred-lotus-magenta-thumbnail.png" />
+<link rel="shortcut icon" href="" type="image/x-icon">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <br>
+    <h1 style="color: black">Roseth ART</h1>
+    <h2 style="color: black;">registrate y obten descuentos!!!</h2>
+    <a class="navbar-brand" href="/index.html">!Bienvenidos a nuestro mundo de creatividad y color!</a>
+    <br><br>
+    <div class="container" id="container">
+        <!-- Regístrese -->
+        <div class="form-container sign-up-container">
+            <form action="" method="">
+                <h2>Crear una cuenta</h2>
+                <!-- ************************************************* -->
+                <span style="font-size: 20px;font-weight:bold">Ingresa tus datos para registrarse</span>
+                <input type="text" placeholder="Usuario" name="usuario" required >
+                <input type="text" placeholder="Nombre" name="realname" required>
+                <input type="text" placeholder="Apellido" name="realapell" required>
+                <select name="tipo_doc">
+                    <option value="Tarjeta identidad">Tarjeta identidad</option>
+                    <option value="Cedula ciudadania">Cedula ciudadania</option>
+                </select>
+                <input type="text" placeholder="documento" name="no_documento" required>
+                <input type="password" placeholder="Password" name="pass" required>
+                <input type="password" placeholder="Repita Password" name="rpass" required>
+                <input type="submit" class="boost" name="submit" value="Registrar">
+            </form>
+        </div>
+        <!-- Iniciar sesión -->
+                <div class="form-container sign-in-container">
+                    <form action="" method="">
+                        <h2>Iniciar Sesión</h2>
+                        <div class="social-container">
+                            <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.youtube.com"><i class="fab fa-youtube-square"></i></a>
+                            <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                            <a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <!-- ************************************************* -->
+                        <br>
+                        <span>Ingresa tu cuenta</span>
+                        <input type="text" placeholder="Usuario" name="usuario" required>
+                        <input type="password" placeholder="Password" name="pass" id="seña" required>
+                        <input type="checkbox" id="verpass" onchange="mostrarSeña()">Mostrar contraseña
+                        <a href="#">Olvidaste tu contraseña?</a>
+                        <input type="submit" class="boost" name="submit" id="boost" value="Aceptar">
+                    </form>
+                </div> 
+
+        <!-- SECCION DE CONTENEDORES OVERLAY DINAMICOS -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>BIENVENIDO DE NUEVO!</h1>
+                    <p>Inicie sesión con sus datos claves</p>
+                    <button class="ghost" id="signIn">Inicio Sesión</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Bienvenido</h1>
+                    <p>Ingrese sus datos personales</p>
+                    <button class="ghost" id="signUp">Registrate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- firma -->
+    <div class="footer">
+        <footer>
+            <p>Derechos Reservados &copy;2024 </p>
+        </footer>
+        
+    </div>
+<script src="../js/LOGIN.js"></script>
+</body>
+</html>
